@@ -1,22 +1,7 @@
-A library for Dart developers.
+# blue_alliance_client
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+A simple library to handle caching and authentication for API requests to [The Blue Alliance](https://www.thebluealliance.com/), a popular database for the [_FIRST_ Robotics Competition](https://www.firstinspires.org/robotics/frc).
 
-## Usage
+Three cache implementations are provided - a `MemoryCache`, a `FileSystemCache`, and an `IndexedDBCache` - as well as a `TbaCacheCompressor` that can sit between the client and the cache.
 
-A simple usage example:
-
-```dart
-import 'package:blue_alliance_client/blue_alliance_client.dart';
-
-main() {
-  var awesome = new Awesome();
-}
-```
-
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
+See also [The Blue Alliance's API documentation](https://www.thebluealliance.com/apidocs).
