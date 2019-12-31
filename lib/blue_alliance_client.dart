@@ -1,8 +1,17 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
+/// A wrapper for making API calls to The Blue Alliance through an
+/// [http.Client].
+/// 
+/// [TbaClient] provides authentication and caching, with a built-in
+/// [MemoryCache] implementation. Persistent caches for the browser and
+/// VM/Flutter are provided in separate libraries.
+/// 
+/// You can create your own cache by implementing [TbaCacheProvider].
 library blue_alliance_client;
 
-export 'src/blue_alliance_client_base.dart';
+import 'package:http/http.dart' as http;
 
-// TODO: Export any libraries intended for clients of this package.
+import 'blue_alliance_client.dart';
+
+export 'src/caching/cache_provider.dart';
+export 'src/caching/memory_cache.dart';
+export 'src/client.dart';
