@@ -13,5 +13,6 @@ import 'package:http/http.dart' as http;
 import 'blue_alliance_client.dart';
 
 export 'src/caching/cache_provider.dart';
+export 'src/caching/compression.dart';
 export 'src/caching/memory_cache.dart';
 export 'src/client.dart';

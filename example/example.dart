@@ -10,7 +10,7 @@ const teams = ['frc624', 'frc1477', 'frc5892'];
 
 void main() async {
   var client = TbaClient(await File('key.txt').readAsString(),
-      cache: FileSystemCache('cache'));
+      cache: TbaCacheCompressor(FileSystemCache('cache')));
 
   for (var team in teams) {
     var stats = ClimbStats();
