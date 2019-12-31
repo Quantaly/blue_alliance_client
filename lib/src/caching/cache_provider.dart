@@ -15,8 +15,8 @@ abstract class TbaCacheProvider {
   Future<DateTime> cacheUntil(String path);
 
   /// Store the given resource in the cache.
-  Future<void> cache(String path, List<int> body, String lastModified,
-      DateTime cacheUntil);
+  Future<void> cache(
+      String path, List<int> body, String lastModified, DateTime cacheUntil);
 
   /// Free resources owned by the cache (e.g. file descriptors, IndexedDB
   /// connections).

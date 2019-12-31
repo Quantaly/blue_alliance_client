@@ -1,10 +1,10 @@
 /// A wrapper for making API calls to The Blue Alliance through an
 /// [http.Client].
-/// 
+///
 /// [TbaClient] provides authentication and caching, with a built-in
 /// [MemoryCache] implementation. Persistent caches for the browser and
 /// VM/Flutter are provided in separate libraries.
-/// 
+///
 /// You can create your own cache by implementing [TbaCacheProvider].
 library blue_alliance_client;
 
